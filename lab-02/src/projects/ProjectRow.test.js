@@ -33,4 +33,8 @@ describe('<ProjectRow />', () => {
         .text()
     ).toEqual('DESCRIPTION');
   });
+
+  it('should render to match the snapshot', () => {
+    expect(wrapper).toMatchSnapshot();
+  });
 });
